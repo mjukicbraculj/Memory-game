@@ -1,0 +1,13 @@
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\bin\Debug\Memory.exe.config
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory.csprojResolveAssemblyReference.cache
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\MainWindow.baml
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\MainWindow.g.cs
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\App.g.cs
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory_MarkupCompile.cache
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory.g.resources
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory.Properties.Resources.resources
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory.csproj.GenerateResource.Cache
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\bin\Debug\Memory.exe
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\bin\Debug\Memory.pdb
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory.exe
+c:\users\mira\documents\visual studio 2012\Projects\Memory\Memory\obj\Debug\Memory.pdb

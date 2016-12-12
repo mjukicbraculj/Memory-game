@@ -1,0 +1,115 @@
+﻿<Window x:Class="Memory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Memory" Height="750" Width="750" Icon="Images/comp.png"
+        SizeChanged="crtajCanvasOpet">
+    <Grid Background="AliceBlue">
+        <StackPanel Name="pocetakSP">
+            <StackPanel Orientation="Horizontal" Margin="0, 150, 0, 200" HorizontalAlignment="Center">
+                <Image Source="Images/m.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="14.688"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="Images/e.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-21"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="Images/m.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-14.792"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="Images/o.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-19.553"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="Images/r.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-6.019"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="Images/y.png" RenderTransformOrigin="0.403,0.583">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-12.783"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </StackPanel>
+            <!--<StackPanel HorizontalAlignment="Center" Margin="0, 50, 0, 20">
+                <RadioButton GroupName="dimenzije" Content="10x10"></RadioButton>
+                <RadioButton GroupName="dimenzije" Content="20x20"></RadioButton>
+                <RadioButton GroupName="dimenzije" Content="30x30"></RadioButton>
+            </StackPanel>-->
+            <!--<CheckBox HorizontalAlignment="Center" Checked="igraDvaIgraca" Unchecked="igraJedanIgrac">Dva igrača</CheckBox>-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 20, 0, 30">
+                <Label >Prvi igrač</Label>
+                <TextBox Width="100" Name="name1TB"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Name="drugiIgracSP">
+                <Label >Drugi igrač</Label>
+                <TextBox Width="100" Name="name2TB"></TextBox>
+            </StackPanel>
+            <Button Name="playBtn"  Click="play" Background="Chocolate" Height="30" HorizontalAlignment="Center" Width="100" Margin="0, 50, 0, 0">Play!</Button>
+        </StackPanel>
+        <Grid Name="igraUTijeku" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Name="gameInfo" Background="AliceBlue">
+                <StackPanel Width="150" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20, 0, 0, 0">
+                    <TextBlock Name="name1" TextAlignment="Center"><Bold></Bold></TextBlock>
+                    <TextBox Name="pogodak1" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <StackPanel Width="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock TextAlignment="Center"><Bold>Na potezu:</Bold></TextBlock>
+                    <TextBox Name="igracNaPotezu" TextAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel Width="150" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 20, 0">
+                    <TextBlock Name="name2" TextAlignment="Center"><Bold></Bold></TextBlock>
+                    <TextBox Name="pogodak2" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                </StackPanel>
+            </Grid>
+            <Canvas Background="AntiqueWhite" Name="plocaCanvas" Grid.Row="1" >
+            </Canvas>
+        </Grid>
+        <StackPanel Name="krajIgre" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+            <Button Click="startNewGame" Margin="10, 10, 10, 10" Background="Chocolate" Height="30">New Game</Button>
+            <Button Click="goHome" Margin="10, 10, 10, 10" Background="Chocolate" Height="30" Width="100">Home</Button>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
